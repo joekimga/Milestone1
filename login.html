@@ -62,7 +62,7 @@
               
 				<h2>Modal Login Form</h2>
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:100;">Login</button>
 
 <div id="id01" class="modal">
   
@@ -72,18 +72,25 @@
       <img src="assets/images/login_icon-png.jpg" alt="Avatar" class="avatar">
     </div>
 
-    <div class="container">
+    <div id="login_div" class="container">
       <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+      <input type="text" placeholder="Enter Username" name="uname" id="email_field" required>
 
       <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <input type="password" placeholder="Enter Password" name="psw" id="password_field" required>
         
-      <button type="submit">Login</button>
+      <button onclick="login()">Login</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
     </div>
+
+	<div id="user_div" class="loggedin-div">
+		<h3>Welcome User</h3>
+		<p>Welcome to Firebase web login.  You're currently logged in.</p>
+	</div>
+
+
 
     <div class="container" style="background-color:#f1f1f1">
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>

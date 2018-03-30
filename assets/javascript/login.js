@@ -1,18 +1,6 @@
-/*Modal*/
-// Get the modal
-var modal = document.getElementById('id01');
+    // START CODING BELOW!!
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
-//////////////////////////////////////////////////
-
-/*Firebase*/
-  // Initialize Firebase
+    // Initialize Firebase
   var config = {
     apiKey: "AIzaSyC4XBBCRyWo1VroD2_qFq_WQZddQETCwz8",
     authDomain: "milestone1-199113.firebaseapp.com",
@@ -21,39 +9,50 @@ window.onclick = function(event) {
     storageBucket: "milestone1-199113.appspot.com",
     messagingSenderId: "501004776475"
   };
-  firebase.initializeApp(config);
-</script>
+
+    firebase.initializeApp(config);
+
+    // Create a variable to reference the database
+    var database = firebase.database();
+
+    // Initial Values
+    var name = "";
+    var email = "";
+    var comment = "";
+
+    // Capture Button Click
+    $("#add-user").on("click", function(event) {
+      // Don't refresh the page!
+      event.preventDefault();
+
+      // YOUR TASK!!!
+      // Code in the logic for storing and retrieving the most recent user.
+      // Don't forget to provide initial data to your Firebase database.
+      name = $("#name-input").val().trim();
+      email = $("#email-input").val().trim();
+      comment = $("#comment-input").val().trim();
+
+      database.ref().set({
+        name: name,
+        email: email,
+        comment: comment
+      });
+
+    });
+
+    // Firebase watcher + initial loader HINT: .on("value")
+    database.ref().on("value", function(snapshot) {
+
+      var db = snapshot.val();
 
 
-///////////////////////////////////////////////
-//firebase
+      // Change the HTML to reflect
+      $("#name-display").html(db.name);
+      $("#email-display").html(db.email);
+      $("#comment-display").html(db.comment);
 
+      // Handle the errors
+    }, function(errorObject) {
+      console.log("Errors handled: " + errorObject.code);
+    });
 
-
-
-firebase.auth().onAuthStateChanged(function(user) {
-  if (user) {
-    // User is signed in.
-    document.getElementById("user_div").style.display = "block";
-    document.getElementById("login_div").style.display = "none";
-  } else {
-    // No user is signed in.
-    document.getElementById("user_div").style.display = "none";
-    document.getElementById("login_div").style.display = "block";
-  }
-});
-//(TAKE OUT ALERT!!!) 
-//Firebase login 
-  function login() {
-  	//TESTING//////////////////////////////
-  	var userEmail = document.getElementById("email_field").value;
-  	var userPass = document.getElementById("password_field").value;
-  	//window.alert(userEmail + " " + userPass);
-  	firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(error) {
-  		// Handle Errors here.
-  		var errorCode = error.code;
-  		var errorMessage = error.message;
-  		// ...
-  		window.alert("Error : " + errorMessage);
-});
-  }

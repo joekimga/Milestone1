@@ -1,0 +1,7 @@
+/*Body background image*/
+#contactpage {
+	background-image: url("../images/stones.png");
+	background-size: cover;
+	/*background: transparent;*/
+	z-index: 1000;
+}

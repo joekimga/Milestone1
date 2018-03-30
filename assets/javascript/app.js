@@ -20,6 +20,8 @@
 
 
 
+
+
 //AJAX
 //   $.ajax({
 //       url: `https://api.yelp.com/v3/businesses/search?term=$snapfitness&location&categories&apikey`,
@@ -34,8 +36,8 @@
 //   })
 
   $.ajax({
-      url: "https://api.yelp.com/v3/autocomplete?text=del&latitude=37.786882&longitude=-122.399972",
-      method: "get"
+      url: `https://maps.googleapis.com/maps/api/place/textsearch/xml?query=restaurants+in+Sydney&key=AIzaSyDOIrdjOme0yAiuQS8QlE9JTucD7rG81X8`,
+      method: "GET",
   }).done(function(response) {
       console.log(response);
   });

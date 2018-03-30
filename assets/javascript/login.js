@@ -12,16 +12,17 @@ window.onclick = function(event) {
 //////////////////////////////////////////////////
 
 /*Firebase*/
- // Initialize Firebase
+  // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyA_DT60r98EojCCROWjrgfoSW6DbLSPM_o",
-    authDomain: "feb2018cbc.firebaseapp.com",
-    databaseURL: "https://feb2018cbc.firebaseio.com",
-    projectId: "feb2018cbc",
-    storageBucket: "feb2018cbc.appspot.com",
-    messagingSenderId: "82644971069"
+    apiKey: "AIzaSyC4XBBCRyWo1VroD2_qFq_WQZddQETCwz8",
+    authDomain: "milestone1-199113.firebaseapp.com",
+    databaseURL: "https://milestone1-199113.firebaseio.com",
+    projectId: "milestone1-199113",
+    storageBucket: "milestone1-199113.appspot.com",
+    messagingSenderId: "501004776475"
   };
   firebase.initializeApp(config);
+</script>
 
 
 ///////////////////////////////////////////////

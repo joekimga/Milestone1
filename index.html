@@ -4,12 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport"
 		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!--<meta http-equiv="X-UA-Compatible" content="ie=edge">-->
 	<title>Milestone1</title>
 
 	<!--Google Fonts CDN-->
 
-	<link href=“https://fonts.googleapis.com/css?family=Pacifico” rel=“stylesheet”>
+	<!--<link href=“https://fonts.googleapis.com/css?family=Pacifico” rel=“stylesheet”>-->
 
 	<!--Bootstrap CDN-->
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -17,11 +17,13 @@
 	<!--CSS-->
 	<link rel="stylesheet" type="text/css" href="assets/css/home.css">
 
+
 	<!--JQuery CDN-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<!--JavaScript-->
 	<script src="assets/javascript/home.js"></script>
+	<script src="assets/javascript/app.js"></script>
 
 
 	<!--JavaScript CDN-->
@@ -35,7 +37,7 @@
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 <body>
@@ -85,6 +87,8 @@
 			         <p>This app will offer location information and reviews near you for self care and wellness based on your zip code</p>
 			       <p class="lead">
 			    <a class="btn btn-primary btn-lg" href="#" role="button">Give It A Try!</a>
+
+					   <button id="trial" data-trial="works" value="trial"> Ajax </button>
 			  </p>
          </div>
 
@@ -107,6 +111,7 @@
 
 			<!--Google Search-->
 			<!--  Google Submit Button -->
+
 			<form method="get" action="https://www.google.com/search" >
 			<input type="text" name="q" size="31" value="" placeholder="Google Search">
 			<input type="submit" name="submit" value="" title="icon">

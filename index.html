@@ -18,11 +18,14 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/home.css">
 
 
-	<!--JQuery CDN
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
-	<!--JavaScript-->
+
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
 	<script src="assets/javascript/home.js"></script>
 	<script src="assets/javascript/app.js"></script>
 
@@ -99,9 +102,9 @@
 			            <hr class="my-4">
 			         <p>This app will offer location information and reviews near you for self care and wellness based on your zip code</p>
 			       <p class="lead">
-			    <a class="btn btn-primary btn-lg" href="#" role="button">Give It A Try!</a>
+			    <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Give It A Try!</a>
 
-					   <button id="trial" data-trial="works" value="trial"> Ajax </button>
+					   <button id="trial" data-trial="works" value="trial"> Ajax </button> -->
 			  </p>
          </div>
           </div>
@@ -135,32 +138,12 @@
      <input type="text" class="form-control" id="userInputZip" placeholder="Text input">
    </div>
  -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="fitness">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#userZipCode" id="fitness">
   Fitness
 </button>
 
-<!-- Modal --> 
-<div class="modal fade" id="userZipCode" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalTitle">Find Gyms In Your Area</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
 
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="food">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#userZipCode" id="food">
   Food
 </button>
 
@@ -185,7 +168,7 @@
   </div>
 </div> -->
 
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="spa">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#userZipCode" id="spa">
   Spa
 </button>
 
@@ -210,7 +193,7 @@
   </div>
 </div> -->
 
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="retreats">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#userZipCode" id="retreats">
   Retreats
 </button>
 
@@ -235,7 +218,7 @@
   </div>
 </div> -->
 
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="wellness">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#userZipCode" id="wellness">
   Wellness
 </button>
 
@@ -260,7 +243,7 @@
   </div>
 </div> -->
 
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="adventures">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#userZipCode" id="adventures">
   Adventures
 </button>
 
@@ -285,6 +268,27 @@
   </div>
 </div> -->
 
+
+<!-- Modal --> 
+<div class="modal" id="userZipCode" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="topicTitle">Find Gyms In Your Area</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
          <!-- <img src="assets/images/stones-1372677_960_720.png"> -->
@@ -368,6 +372,7 @@
           </div>
         </div>
       </div>
+
 
 
 

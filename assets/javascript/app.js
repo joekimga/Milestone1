@@ -10,6 +10,9 @@
   // firebase.initializeApp(config);
 
 
+
+
+
   $(document).on("click", "#trial",function () {
 
     var trial = $(this).attr("data-trial")
@@ -35,8 +38,9 @@
 //       }
 //   })
 
+
   $.ajax({
-      url: `https://maps.googleapis.com/maps/api/place/textsearch/xml?query=restaurants+in+Sydney&key=AIzaSyDOIrdjOme0yAiuQS8QlE9JTucD7rG81X8`,
+      url: `  https://cors-anywhere.herokuapp.com/https:\/\/maps.googleapis.com/maps/api/place/textsearch/json?query=restaurants+in+Sydney&key=AIzaSyDOIrdjOme0yAiuQS8QlE9JTucD7rG81X8`,
       method: "GET",
   }).done(function(response) {
       console.log(response);

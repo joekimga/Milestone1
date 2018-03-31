@@ -37,15 +37,15 @@
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-<<<<<<< HEAD
+
 	
 	<!--CSS-->
 	<link rel="stylesheet" type="text/css" href="assets/css/home.css">
 
 
-=======
+
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
->>>>>>> fc000251a8c1435e7759cb1c4d75539aaeffbf87
+
 
 </head>
 <body>
@@ -75,11 +75,11 @@
         </div>
         <div class="row">
           
-<<<<<<< HEAD
+
           <div class="col-md-12">
             <p>
-=======
-          <div class="col-md-9">
+
+          <div class="col-md-7">
 
            <div class="row">
            	<div class="col-xs-8">
@@ -95,9 +95,10 @@
 			  </p>
          </div>
           </div>
-          <div class="col-xs-4">
-   <div class="buttons-home">
-        <div class="col-md-4">
+         <!--  <div class="col-sm-4"> -->
+   <div class="btn-group">
+        <div class="col-md-6">
+        	<div class="row">
         	 <div class="btn-group">
 	        	<button type="button" class="btn btn-info" id="fitness">Fitness</button>
 	        	<button type="button" class="btn btn-info" id="food">Food</button>
@@ -107,9 +108,9 @@
        </div> 
 
 
-       <div class="buttons-home">
-       <div class="col-md-4">
-        	 <div class="btn-group">
+       <div class="btn-group">
+       <div class="col-md-6">
+        	 <div class="row">
 	        	<button type="button" class="btn btn-info" id="retreats">Retreats</button>
 	            <button type="button" class="btn btn-info" id="wellness">Wellness</button>
 	            <button type="button" class="btn btn-info" id="adventures">Adventures</button>
@@ -119,6 +120,163 @@
  </div>
    </div> 
    </div>     
+
+   <!-- <div class="zipcode">
+     <input type="text" class="form-control" placeholder="Text input">
+   </div>
+ -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="fitness">
+  Fitness
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Find Gyms In Your Area</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="food">
+  Food
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Gourmet Meals In Your Area</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="spa">
+  Spa
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Spa Selections In Your Area</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="retreats">
+  Retreats
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Relaxing Selections In Your Area</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="wellness">
+  Wellness
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Get and Set Your Mind At Ease</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="adventures">
+  Adventures
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Indulge In Fun Activities In Your Area</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
          <!-- <img src="assets/images/stones-1372677_960_720.png"> -->
 
   <!--  <div class="button-sidebar"> -->
@@ -146,7 +304,7 @@
   
 
 
-=======
+
 
 
 			<!--SEARCH BAR-->
@@ -154,7 +312,7 @@
 	
 
 
-           <!--Youtube API-->>
+           <!--Youtube API-->
            <div>
            	
 
@@ -164,7 +322,7 @@
 
 
 			<!--Google Search-->
-			<!--  Google Submit Button -->
+			<!--  Google Submit Button 
 
 			<form method="get" action="https://www.google.com/search" >
 			<input type="text" name="q" size="31" value="" placeholder="Google Search">
@@ -175,20 +333,20 @@
 		
 			</form>
 			
-
+-->
 <!--  break between forms-->
-
+<!-- 
 			<form method="get" action="http://images.google.com/images?q=" >
 				<input type="text" name="q" size="31" value="" placeholder="Image Search">
 					<input type="submit" name="submit" value="" title="icon">
 			</form>
 
-
+ -->
 
 			<!--Google Search End-->
 
             </p>
->>>>>>> 52d342845a95bf7b5f769393d00ab84a972d8a33
+
           </div>
         </div>
       </div>

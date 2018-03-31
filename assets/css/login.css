@@ -8,6 +8,12 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
 }
 
+body {
+    background-image: url("../images/stones.png");
+    background-size: cover;
+    /*background: transparent;*/
+    z-index: 1000;
+}
 /* Set a style for all buttons */
 button {
     background-color: #4CAF50;

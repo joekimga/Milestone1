@@ -1,0 +1,9 @@
+/*Body background image*/
+body {
+	background-image: url("../images/stones.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top left;
+	/*background: transparent;*/
+	z-index: 1000;
+}

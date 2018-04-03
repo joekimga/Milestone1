@@ -2,12 +2,12 @@
 
     // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyC4XBBCRyWo1VroD2_qFq_WQZddQETCwz8",
-    authDomain: "milestone1-199113.firebaseapp.com",
-    databaseURL: "https://milestone1-199113.firebaseio.com",
-    projectId: "milestone1-199113",
-    storageBucket: "milestone1-199113.appspot.com",
-    messagingSenderId: "501004776475"
+    apiKey: "AIzaSyCrR1kyyBmRQpDRSswtOG_HB3q5qCPtwNk",
+    authDomain: "milestone-f7ea3.firebaseapp.com",
+    databaseURL: "https://milestone-f7ea3.firebaseio.com",
+    projectId: "milestone-f7ea3",
+    storageBucket: "milestone-f7ea3.appspot.com",
+    messagingSenderId: "901683552649"
   };
 
     firebase.initializeApp(config);
@@ -16,9 +16,14 @@
     var database = firebase.database();
 
     // Initial Values
-    var name = "";
-    var email = "";
-    var comment = "";
+    var username = "";
+    var password = "";
+    //var rememberMe = "";
+    //var cancel = "";
+    //var forgetPwd = "";
+
+
+
 
     // Capture Button Click
     $("#add-user").on("click", function(event) {
@@ -28,14 +33,14 @@
       // YOUR TASK!!!
       // Code in the logic for storing and retrieving the most recent user.
       // Don't forget to provide initial data to your Firebase database.
-      name = $("#name-input").val().trim();
-      email = $("#email-input").val().trim();
-      comment = $("#comment-input").val().trim();
+      username = $("#username-input").val().trim();
+      password = $("#password-input").val().trim();
+      //comment = $("#comment-input").val().trim();
 
       database.ref().set({
-        name: name,
-        email: email,
-        comment: comment
+        username: username,
+        password: password,
+        //comment: comment
       });
 
     });
@@ -47,9 +52,9 @@
 
 
       // Change the HTML to reflect
-      $("#name-display").html(db.name);
-      $("#email-display").html(db.email);
-      $("#comment-display").html(db.comment);
+      $("#username-display").html(db.username);
+      $("#password-display").html(db.password);
+      //$("#comment-display").html(db.comment);
 
       // Handle the errors
     }, function(errorObject) {

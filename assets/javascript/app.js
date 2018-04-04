@@ -12,7 +12,7 @@
 
 
 
-
+  //
   // $(document).on("click", "#trial",function () {
   //
   //   let trial = $(this).attr("data-trial")
@@ -40,15 +40,31 @@
 //       }
 //   })
 
+//APIS
 
-
-  // .then(updatePag)
-
+  // $.ajax({
+  //     url: `https://cors-anywhere.herokuapp.com/https:\/\/maps.googleapis.com/maps/api/place/textsearch/json?query=gyms+food+spas+retreats+welness+movies+in+Atlanta&key=AIzaSyDOIrdjOme0yAiuQS8QlE9JTucD7rG81X8`,
+  //     method: "GET",
+  // }).done(function(response) {
+  //     console.log(response);
+  // });
+  //
+  //
+  // var movie = "The Social Network";
+  // var queryURL = "https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
+  //
+  //
+  // $.ajax({
+  //     url: queryURL,
+  //     method: "GET",
+  // }).done(function(response) {
+  //     console.log(response);
   // });
 
 
 
-// psuedo code
+
+  // psuedo code
 
   //var fit = "";
   //var welness= "";

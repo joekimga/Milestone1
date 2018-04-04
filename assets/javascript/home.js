@@ -45,7 +45,7 @@ console.log(userChoiceText);
 
 // zip code config to api
 
-$(document).on("click","#zipCode2", function () {
+$(document).on("click","#zipCode2", function() {
 
 //APIS
 

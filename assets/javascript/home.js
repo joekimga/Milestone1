@@ -45,15 +45,13 @@ console.log(userChoiceText);
 
 // zip code config to api
 
-<<<<<<< HEAD
 $(document).on("click","#zipCode2", function() {
 
 //APIS
 
-=======
+
 $(document).on("click","#zipButton", function () {
     var zip = $("#ZipCode2").val().trim();
->>>>>>> 83922084c2cf2d7b5cfa2de26a90e0104b38a96d
     $.ajax({
         url: `https://cors-anywhere.herokuapp.com/https:\/\/maps.googleapis.com/maps/api/place/textsearch/json?query=${userChoiceText}+in+Atlanta+${zip}&key=AIzaSyDOIrdjOme0yAiuQS8QlE9JTucD7rG81X8`,
         method: "GET",

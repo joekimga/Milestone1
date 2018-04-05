@@ -1,4 +1,3 @@
-
 // psuedo code
 
 //var fit = "";
@@ -20,63 +19,85 @@ let selfHelp =  ["fitness", "healthy foods", "spa", "retreats","wellness", "adve
 $(document).on("click",".option", function () {
     let userChoice= $(this).attr("id")
     console.log(userChoice)
+});
+
+let userChoiceText;
+
+
+$(document).on("click",".option", function() {
+    userChoiceText= $(this).text().trim();
+    console.log(userChoiceText);
+    if (userChoiceText === "Fitness"){
+        $("#topicTitle").text(`Hi! Great, you have chosen ${userChoiceText}`);
+        console.log("you clicked fitness");
+    } else if (userChoiceText === "Food") {
+        $("#topicTitle").text(`Hungry? You have chosen ${userChoiceText}`);
+    } else if (userChoiceText === "Spa") {
+        $("#topicTitle").text(`Ah, You have chosen ${userChoiceText}`);
+    } else if(userChoiceText === "Retreats"){
+        $("#topicTitle").text(`Great! Want to go on a ${userChoiceText}`);
+    } else if (userChoiceText === "Wellness"){
+        $("#topicTitle").text(`Nice! You have chosen ${userChoiceText}`);
+    } else if (userChoiceText === "Movies"){
+        $("#topicTitle").text(`Awesome! You have chosen ${userChoiceText}`);
+    }});
+
+// zip code config to api
+
+$(document).on("click","#zipButton", function () {
+    var zip = $("#ZipCode2").val().trim();
+    $.ajax({
+        url: `https://cors-anywhere.herokuapp.com/https:\/\/maps.googleapis.com/maps/api/place/textsearch/json?query=${userChoiceText}+in+Atlanta+${zip}&key=AIzaSyDOIrdjOme0yAiuQS8QlE9JTucD7rG81X8`,
+        method: "GET",
+    }).done(function(response) {
+        $("#whateverDiv").text(response.results[0].name);
+        console.log(response);
     });
 
 
+    var movie = "The Social Network";
+    var queryURL = "https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
 
 
-$(document).on("click",".option", function () {
-let userChoiceText= $(this).text();
-    if (userChoiceText === "fitness"){
-        $("#fitness").text(`Hi! Great, you have chosen ${userChoiceText}`);
-    } else if (userChoiceText === "food") {
-        $("#food").text(`Hungry? You have chosen ${userChoiceText}`);
-    } else if (userChoiceText === "spa") {
-        $("#spa").text(`Ah, You have chosen ${userChoiceText}`);
-    } else if(userChoiceText === "retreats"){
-        $("#retreats").text(`Great! Want to go on a ${userChoiceText}`);
-    } else if (userChoiceText === "wellness"){
-        $("#wellness").text(`Nice! You have chosen ${userChoiceText}`);
-    } else if (userChoiceText === "adventures"){
-        $("#adventures").text(`Awesome! You have chosen ${userChoiceText}`);
-    }});
-
-
-//can we do this for loop ?
-
-// for (i=0; selfHelp.length; i++ ) {
-//     $(document).on("click",".option", function () {
-//         let userChoiceText= $(this).text();
-//         if (userChoiceText === "fitness"){
-//             $("#fitness").text(`Hi! Great, you have chosen ${userChoiceText}`);
-//         } else if (userChoiceText === "food") {
-//             $("#food").text(`Hungry? You have chosen ${userChoiceText}`);
-//         } else if (userChoiceText === "spa") {
-//             $("#spa").text(`Ah, You have chosen ${userChoiceText}`);
-//         } else if(userChoiceText === "retreats"){
-//             $("#retreats").text(`Great! Want to go on a ${userChoiceText}`);
-//         } else if (userChoiceText === "wellness"){
-//             $("#wellness").text(`Nice! You have chosen ${userChoiceText}`);
-//         } else if (userChoiceText === "adventures"){
-//             $("#adventures").text(`Awesome! You have chosen ${userChoiceText}`);
-//         }});
-// }
-
-
-
-
-
-
-
-
-
-
-    // let userChoiceText = $(this).text();
+    $.ajax({
+        url: queryURL,
+        method: "GET",
+    }).done(function(response) {
+        console.log(response);
+    });
     //
-    // if(userChoice === "fitness"){
-    //     $("#topicTitle").text(`Hey You have chosen ${userChoiceText}`);
-    // else if
+    // //APIS
+    //
+    // $.ajax({
+    //     url: `https://cors-anywhere.herokuapp.com/https:\/\/maps.googleapis.com/maps/api/place/textsearch/json?query=gyms+food+spas+retreats+welness+movies+in+Atlanta&key=AIzaSyDOIrdjOme0yAiuQS8QlE9JTucD7rG81X8`,
+    //     method: "GET",
+    // }).done(function(response) {
+    //     console.log(response);
+    // });
+    //
+    // var movie = "The Social Network";
+    // var queryURL = "https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
     //
     //
-    //         });
+    // $.ajax({
+    //     url: queryURL,
+    //     method: "GET",
+    // }).done(function(response) {
+    //     console.log(response);
+    // });
+    //
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
 

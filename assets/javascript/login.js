@@ -1,16 +1,15 @@
     // START CODING BELOW!!
 
     // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCrR1kyyBmRQpDRSswtOG_HB3q5qCPtwNk",
-    authDomain: "milestone-f7ea3.firebaseapp.com",
-    databaseURL: "https://milestone-f7ea3.firebaseio.com",
-    projectId: "milestone-f7ea3",
-    storageBucket: "milestone-f7ea3.appspot.com",
-    messagingSenderId: "901683552649"
+   var config = {
+    apiKey: "AIzaSyBrtH3V54Agw02jUBKMTr-F61xW3OLg3og",
+    authDomain: "milestoneloginjs.firebaseapp.com",
+    databaseURL: "https://milestoneloginjs.firebaseio.com",
+    projectId: "milestoneloginjs",
+    storageBucket: "milestoneloginjs.appspot.com",
+    messagingSenderId: "638365950363"
   };
-
-    firebase.initializeApp(config);
+  firebase.initializeApp(config);
 
     // Create a variable to reference the database
     var database = firebase.database();

@@ -20,7 +20,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<!--JavaScript-->
-	<script src="assets/javascript/login.js"></script>
+	<script src="assets/javascript/login.js.js"></script>
 
 
 	<!--JavaScript CDN-->
@@ -58,24 +58,26 @@
     <div class="row">
       <div class="col-md-12">
         <div class="page-header">
-          <h1>Hello World</h1>
+          <h1>Relax, Calm Down</h1>
         </div>
         <div class="row">
           <div class="col-md-12">
             <p>
               
-				<h2>Modal Login Form</h2>
+				<h2>Press Button for some Tips</h2>
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:100;">Login</button>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:100;">Tips</button>
 
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="/action_page.php">
+  <form class="modal-content animate" action="/action_page.php" style="background-color: #d3d3d3;">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="assets/images/login_icon-png.jpg" alt="Avatar" class="avatar">
+      <img src="assets/images/Meditation-slider-left.jpg" alt="Avatar" class="avatar">
     </div>
 
+
+	<!--OMIT USERNAME, PASSWORD, LOGIN
     <div id="login_div" class="container">
       <label for="uname"><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="uname" id="email_field" required>
@@ -88,7 +90,9 @@
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
     </div>
-	
+	-->
+
+
 	<!--Firebase Text
 	<div id="user_div" class="loggedin-div">
 		<h3>Welcome User</h3>
@@ -97,10 +101,42 @@
 -->
 
 
+	<!--MORE DIVS IN THE LOGIN-->
+    <div class="row">
+        <div class="container-info">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="separate">
+                        <em><h4 class="heading" style="display: block; color: #BF5FFF; text-align: center;">Relax</h4></em>
+                        <p class="content" style="color: #FFA500">Find an activity to calm you down</p>
+                    </div>
+                </div>
 
-    <div class="container" style="background-color:#f1f1f1">
+                <div class="col-md-4">
+                    <div class="separate">
+                        <em><h4 class="heading" style="display: block; color: #BF5FFF; text-align: center">Exercise</h4></em>
+                        <p class="content" style="color: #FFA500">30 minuetes of physical activity</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="separate">
+                        <em><h4 class="heading" style="display: block; color: #BF5FFF; text-align: center">Eat Health</h4></em>
+                        <p class="content" style="color: #FFA500">Eat to live, don't live to</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container" style="background-color:#d3d3d3">
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+
+	<!--OMIT FORGET PASSWORD CHECKBOX
       <span class="psw">Forgot <a href="#">password?</a></span>
+		-->
     </div>
   </form>
 </div>

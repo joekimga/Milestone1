@@ -23,7 +23,6 @@
       // Don't refresh the page!
       event.preventDefault();
 
-      // YOUR TASK!!!
       // Code in the logic for storing and retrieving the most recent user.
       // Don't forget to provide initial data to your Firebase database.
       name = $("#name-input").val().trim();

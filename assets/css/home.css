@@ -13,3 +13,45 @@ em {
 	/*background: transparent;*/
 	z-index: 1000;
 }
+
+h2 {
+	color: orchid;
+}
+
+h4 {
+	text-shadow: 2px 2px #1C2833 ;
+}
+
+.container-bottom{
+	margin top: 15px;
+}
+
+.container-info {
+	margin-right: 10px;
+}
+
+#logoname {
+	font-family: 'Pacifico', cursive;
+}
+
+.footerdiv {
+	background-color: #e7e7e7;
+	padding: 10px;
+	text-align: center;
+}
+
+.content {
+	text-align: center;
+}
+
+.separate {
+	background-color: #5C246E;
+	margin: 30px;
+	padding: 5px;
+	border-style: ridge;
+}
+
+#whateverDiv {
+	background-color: #5C246E;
+}	
+

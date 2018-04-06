@@ -36,6 +36,14 @@ button:hover {
     background-color: #f44336;
 }
 
+#logoname {
+    font-family: 'Pacifico', cursive;
+}
+
+.more{
+   color: white; 
+}
+
 /* Center the image and position the close button */
 .imgcontainer {
     text-align: center;

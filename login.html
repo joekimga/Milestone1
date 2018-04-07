@@ -3,12 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport"
-		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		  content="width=device-width, user-scalable=no, initial-scale=1.0,  maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Milestone1</title>
 
 	<!--Bootstrap CDN-->
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 
 	<!--CSS-->
 	<link rel="stylesheet" type="text/css" href="assets/css/login.css">
@@ -17,17 +20,18 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<!--JavaScript-->
-	<script src="assets/javascript/login.js"></script>
+	<script src="assets/javascript/login.js.js"></script>
 
 
 	<!--JavaScript CDN-->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 	<!--Firebase CDN-->
-	<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
 
-	<!--Moment.js-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/locale/af.js"></script>
+
+
+	
 
 
 </head>
@@ -36,13 +40,13 @@
 	<div class="navbar navbar-default">
 		<div class="container">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#" id="logoname">Milestone1 Project</a>				
+				<a class="navbar-brand" href="#" id="logoname">Take-Care-Coding</a>				
 			</div>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         		<ul class="nav navbar-nav navbar-right">
 		          <li><a href="index.html">Home</a></li>
 		          <li><a href="contact.html">Contact</a></li>
-		          <li><a href="login.html">Login</a></li>
+		          <li><a href="login.html">Health Tips</a></li>
         		</ul>
       		</div>
 		</div>
@@ -54,24 +58,26 @@
     <div class="row">
       <div class="col-md-12">
         <div class="page-header">
-          <h1>Hello World</h1>
+          <h1 style="color: white">Relaxation Section</h1>
         </div>
         <div class="row">
           <div class="col-md-12">
             <p>
               
-				<h2>Modal Login Form</h2>
+				<h2 style="color: #d3d3d3">Click Below For More Tips!</h2>
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:100;">Login</button>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:100;">Tips</button>
 
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="/action_page.php">
+  <form class="modal-content animate" action="/action_page.php" style="background-color: #d3d3d3;">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="assets/images/login_icon-png.jpg" alt="Avatar" class="avatar">
+      <img src="assets/images/Meditation-slider-left.jpg" alt="Avatar" class="avatar">
     </div>
 
+
+	<!--OMIT USERNAME, PASSWORD, LOGIN
     <div id="login_div" class="container">
       <label for="uname"><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="uname" id="email_field" required>
@@ -84,7 +90,9 @@
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
     </div>
-	
+	-->
+
+
 	<!--Firebase Text
 	<div id="user_div" class="loggedin-div">
 		<h3>Welcome User</h3>
@@ -93,10 +101,42 @@
 -->
 
 
+	<!--MORE DIVS IN THE LOGIN-->
+    <div class="row">
+        <div class="container-info">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="separate">
+                        <em><h4 class="heading" style="display: block; color: #BF5FFF; text-align: center;">Relax</h4></em>
+                        <p class="content" style="color: #FFA500">Find A Calming Meditation Activity</p>
+                    </div>
+                </div>
 
-    <div class="container" style="background-color:#f1f1f1">
+                <div class="col-md-4">
+                    <div class="separate">
+                        <em><h4 class="heading" style="display: block; color: #BF5FFF; text-align: center">Exercise</h4></em>
+                        <p class="content" style="color: #FFA500">30 minuetes of Physical Activity</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="separate">
+                        <em><h4 class="heading" style="display: block; color: #BF5FFF; text-align: center">Eat Healthy</h4></em>
+                        <p class="content" style="color: #FFA500">Have 2-3 Servings of Fruit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div style="background-color:#d3d3d3">
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+
+	<!--OMIT FORGET PASSWORD CHECKBOX
       <span class="psw">Forgot <a href="#">password?</a></span>
+		-->
     </div>
   </form>
 </div>
@@ -122,7 +162,7 @@
 	<!--Footer-->
 	<nav class="navbar navbar-default navbar-fixed-bottom">
         <div class="container">
-            <p class="text-center">©Copyright 2018 Milestone1</p>
+            <p class="text-center">©Copyright 2018 Project 1 Self Care Programmers </p>
         </div>
     </nav>
 	

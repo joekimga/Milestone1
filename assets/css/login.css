@@ -40,8 +40,8 @@ button:hover {
     font-family: 'Pacifico', cursive;
 }
 
-.more{
-   color: white; 
+em {
+    font-family: 'Pacifico', cursive;
 }
 
 /* Center the image and position the close button */
@@ -105,6 +105,16 @@ span.psw {
     cursor: pointer;
 }
 
+.separate {
+    background-color: #5C246E;
+    margin: 30px;
+    padding: 5px;
+    border-style: ridge;
+}
+
+
+
+
 /* Add Zoom Animation */
 .animate {
     -webkit-animation: animatezoom 0.6s;
@@ -130,4 +140,8 @@ span.psw {
     .cancelbtn {
        width: 100%;
     }
+}
+
+p {
+    text-align: center;
 }
